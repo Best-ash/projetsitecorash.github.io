@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corash Tourism</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script src="https://kit.fontawesome.com/036c958e99.js" crossorigin="anonymous"></script>
+<body>
+     <!-- section accueil -->
+     <section id="container">
+        <header>
+            <div class="logo">
+                <p>Découverte de l'Afrique</p>
+            </div>
+
+            <!-- menu responsive -->
+            <div class="menu-toggle"></div>
+
+            <ul class="menu">
+                <li><a href="#container">accueil</a></li>
+                <li><a href="#a-propos">à propos</a></li>
+                <li><a href="#gallerie">destinations</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="formulaire.html">s'inscrire</a></li>
+            </ul>
+        </header>
+        <div class="container-text">
+            <h1>Voyager c’est évoluer</h1>
+            <p>Voir le monde de ses yeux est mille fois mieux que n’importe quel rêve.</p>
+            <a href="#">LET'S GO</a>
+        </div>
+     </section> 
+
+     <!-- section a propos -->
+      <section id="a-propos">
+        <div>
+            <p class="tittle-section">à propos</p>
+            <h1 class="sub-tittle-section">Qui sommes nous </h1>
+            <div class="description-photo">
+                    <div class="desc">
+                        <p>Bienvenue sur notre site web dédié aux sites touristiques d'Afrique! Que vous soyez un voyageur passionné à la recherche de destinations exotiques
+                                ou simplement curieux de découvrir les richesses culturelles et naturelles de ce continent diversifié, notre plateforme est là pour vous guider dans
+                                votre quête d'aventure. Nous avons rassemblés un contenu assez intéressant qui va vous captiver du début à la fin.</p>
+                        
+                        <h2>NOS SERVICES</h2>
+                        <div class="list-services">
+                            <div class="service">
+                                <i class="fa-sharp fa-solid fa-gauge-high"></i>
+                                <p>DYNAMIQUE</p>
+                                </div>
+                            <div class="service">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                                <p>ORGANISE</p>
+                            </div>
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p>FIABLE</p>
+                            </div>
+                        </div>
+                </div>
+                <img src="images/fond2.jpg" alt="">
+            </div>
+        </div>
+     </section> 
+
+     <!-- section gallerie destination -->
+       <section id="gallerie">
+            <p class="tittle-section">DESTINATIONS</p>
+            <h1 class="sub-tittle-section">Les pays à visiter</h1>
+            <div class="liste-photos">
+                <div class="gallerie-img">
+                    <img src="images/mdt.jpg" alt="">
+                    <div class="show-country"><a class="lienpage" href="monumentindependancetogo.html"><p>TOGO</p></a></div>
+                </div>
+                <div class="gallerie-img">
+                    <img src="images/amazone.jpg" alt="">
+                    <div class="show-country"><a class="lienpage" href="statutamazonebenin.html"><p>BENIN</p></a></div>
+                </div>
+                <div class="gallerie-img">
+                    <img src="images/kurma.jpg" alt="">
+                    <div class="show-country"><a class="lienpage" href="parckwaminkurma.html"><p>GHANA</p></a></div>
+                </div>
+                <div class="gallerie-img">
+                    <img src="images/kheops.jpg" alt="">
+                    <div class="show-country"><a class="lienpage" href="pyramidekheops.html"><p>EGYPTE</p></a></div>
+                </div>
+                <div class="gallerie-img">
+                    <img src="Images/victoria.jpeg" alt="">
+                    <div class="show-country"><a class="lienpage" href="chutesvictoria.html"><p>ZAMBIE</p></a></div>
+                </div>
+
+            </div>
+
+     </section> 
+
+    <!-- section contact -->
+        <section id="contact">
+            <p class="tittle-section">CONTACT</p>
+            <h1 class="sub-tittle-section">Formulaire de contact</h1>
+            <div>
+                <form action="">
+                    <label>Adresse Mail</label>
+                    <input type="email" placeholder="Entrer votre adresse mail">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                    <input type="submit" value="ENVOYER">
+                </form>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="images-contact">
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <p>Copyright Corash Tourism</p>
+        </footer>
+
+<script>
+    var menu_toggle = document.querySelector('header menu-toggle');
+    var menu = document.querySelector('header .menu');
+    menu_toggle.onclick = function(){
+        menu_toggle.classList.toggle('active') ;   
+        menu.classList.toggle('responsive') ;
+    }
+</script>
+
+    </body>
+</html>
